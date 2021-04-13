@@ -1,0 +1,105 @@
+.stats{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top:$container-margin;
+    align-content: center;
+
+    .stat{
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 25px;
+        align-self: center;
+
+        @include breakpoint-down(medium){
+            height: 150px;
+            max-width: 550px;
+        }
+
+        @include breakpoint-down(small){
+            height: 125px;
+        }
+        
+        &_icon{
+            display: flex;
+            background:$grey;
+            max-width: 240px;
+            justify-content: center;
+            min-width: 200px;
+
+            @include breakpoint-down(medium){
+                min-width: 150px;
+            }
+
+            @include breakpoint-down(small){
+                min-width: 125px;
+            }
+        }
+        
+        &_text{
+            position: relative;
+            background-color: $tjc-yellow;
+            margin-left: 30px;
+            text-align: left;
+            padding: 40px;
+            font-size: 1.4em;
+            width: 100%;
+            z-index: 1;
+
+            p{
+                margin: 0;
+            }
+
+            @include breakpoint-down(large){
+                padding: 20px;
+            }
+
+            @include breakpoint-down(medium){
+                font-size: 1.1em;
+            }
+
+            @include breakpoint-down(xsmall){
+                padding: 5px;
+                font-size: .875em;
+            }
+
+            
+            &.grad{
+                padding-top:74px;
+
+                @include breakpoint-down(large){
+                    padding: 20px;
+                }
+
+                @include breakpoint-down(medium){
+                    padding-top: 65px;
+                }
+
+                @include breakpoint-down(xsmall){
+                    padding: 10px;
+                }
+            }
+
+
+            &::before{
+                content: "";
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                background: $tjc-yellow;
+                left: -12px;
+                top: 45%;
+                z-index: -1;
+
+                @include transform(rotate(45deg));
+            }
+        }
+
+        .svg{
+            width: 165px;
+            height: 100%;
+        }
+    }
+}

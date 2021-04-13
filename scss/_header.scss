@@ -1,0 +1,27 @@
+.adm__header{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: $container-margin;
+
+    .top{
+        //background-image:url("https://www.tjc.edu/images/gold_bar.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-top: $container-margin;
+        //padding-bottom: 10px;
+        margin-bottom: $container-margin;
+        font-size:3.3125rem;
+        font-weight: bold;
+    }
+
+    .header__text{
+        margin: 0;
+        font-size: 1.56em;
+        font-weight: 500;
+    }
+
+}
+
+

@@ -1,0 +1,15 @@
+.jotform{
+        min-width: 100% !important;
+        height: 100% !important;
+        border:none;
+        min-height: 1597.5px;
+
+        @include breakpoint-down(small){
+            min-height: 1597.5px;
+            min-width: calc(100% - 50px);
+            justify-self: center;
+        }
+
+
+        //min-height: 1529.5px;
+}
