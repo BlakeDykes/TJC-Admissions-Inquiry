@@ -1,8 +1,8 @@
-//485px , 980px, 1125px, 1300px, 1440px
-$breakpoints-up:("small": "30.3125em", "medium":"61.25em", "large":"70.3125em", "xlarge":"81.25em", "xxlarge":"90em");
+//508px , 983px, 1125px, 1300px, 1440px
+$breakpoints-up:("small": "31.75em", "medium":"61.4375em", "large":"70.3125em", "xlarge":"81.25em", "xxlarge":"90em");
 
-//484px, 979px, 1124px, 1299px, 1439px
-$breakpoints-down:("xsmall": "30.25em", "small":"61.1875em", "medium":"70.25em", "large":"81.1875em","xlarge":"89.9375rem");
+//507px, 982px, 1124px, 1299px, 1439px
+$breakpoints-down:("xsmall": "31.6875em", "small":"61.375em", "medium":"70.25em", "large":"81.1875em","xlarge":"89.9375rem");
 
 
 @mixin breakpoint-up($size) {
