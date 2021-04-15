@@ -3,18 +3,24 @@
     flex-direction: column;
     width: 100%;
     align-content: center;
-    padding-top: 43px;
+    padding-top: 1rem;
+    background:$grey;
 
-    @include breakpoint-down(small){
-        margin-bottom: $container-margin;
+    @media screen and (max-width: 1082px){
+        width: 125%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include transform(translate(-50%, 0));
     }
 
     .stat{
+        position: relative;
         display: flex;
         flex-direction: row;
         height: 200px;
         width: 100%;
-        margin-bottom: 25px;
+        //margin-bottom: 25px;
         align-self: center;
 
         &:last-of-type{
@@ -36,8 +42,14 @@
             justify-content: center;
             min-width: 200px;
 
+            @include breakpoint-down(medium){
+                padding-left: 60px;
+            }
+            
+
             @include breakpoint-down(xsmall){
-                min-width: 125px
+                min-width: 125px;
+                padding-left: 30px;
             }
             
             span{
@@ -73,6 +85,7 @@
             font-size: 1.4em;
             width: 100%;
             z-index: 1;
+            padding-right: 10px;
 
             p{
                 margin: 0;
@@ -80,12 +93,15 @@
                 top: 50%;
                 @include transform(translate(0, -50%));
                 padding-right: 10px;
+
+                @include breakpoint-down(medium){
+                    margin-right: 30px;
+                }
             }
 
             @include breakpoint-down(xsmall){
                 font-size: .875em;
             }
-
             &::before{
                 content: "";
                 width: 30px;

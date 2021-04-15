@@ -21,7 +21,15 @@ document.addEventListener('scroll', function(){
     console.log("viewport-height: " + viewportHeight + " scroll-height: " + scrollY);
     
     let rect = stats.getBoundingClientRect();
-    if(viewportHeight + window.scrollY >= rightColumnHeight + scrollPadding && viewportWidth > 1082){
+    if(viewportHeight + window.scrollY >= rightColumnHeight + scrollPadding && viewportWidth > 1082 && viewportWidth < 1273){
+        if(rightColumnActualHeight + ((viewportHeight + window.scrollY) - rightColumnHeight) < 2105 + scrollPadding){
+            rightColumn.style.minHeight = rightColumnActualHeight + ((viewportHeight + window.scrollY) - rightColumnHeight) - scrollPadding  + "px" ;
+        }
+        else if(rightColumnActualHeight + ((viewportHeight + window.scrollY) - rightColumnHeight) > 2090 + scrollPadding){
+            rightColumn.style.minHeight = 2090  + "px" ;
+        }
+    }
+    else if(viewportHeight + window.scrollY >= rightColumnHeight + scrollPadding && viewportWidth > 1082){
         if(rightColumnActualHeight + ((viewportHeight + window.scrollY) - rightColumnHeight) < 2105 + scrollPadding){
             rightColumn.style.minHeight = rightColumnActualHeight + ((viewportHeight + window.scrollY) - rightColumnHeight) - scrollPadding  + "px" ;
         }
@@ -29,8 +37,11 @@ document.addEventListener('scroll', function(){
             rightColumn.style.minHeight = 2105  + "px" ;
         }
     }
-    else{
-        rightColumn.style.minHeight = "auto";
+    else if(viewportWidth < 1082 && viewportWidth > 508){
+        rightColumn.style.minHeight = "1475px";
+    }
+    else if(viewportWidth < 508){
+        rightColumn.style.minHeight = "1250px"
     }
     
 });
