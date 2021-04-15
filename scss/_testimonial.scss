@@ -4,7 +4,11 @@
     justify-content: center;
     margin: auto;
     margin-bottom: $container-margin;
-    
+
+    @media screen and (max-width: 1082px){
+        width: auto;
+        margin: 0 auto;
+    }
 
     .testimonial{
         display: flex;
@@ -15,12 +19,14 @@
         max-width: 400px;
         text-align: center;
         height: auto;
+        justify-self: center;
 
 
+
+    
         .small{
             width: 335px;
-            margin: auto;
-            
+            margin: 0 auto;
         }
 
         blockquote{
@@ -62,7 +68,7 @@
     position: relative;
     display: flex;
     height: 800px;
-
+    justify-content: center;
     @include breakpoint-down(small){
         height: 735px;
     }
