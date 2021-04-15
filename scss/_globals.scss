@@ -2,14 +2,27 @@
     box-sizing: border-box;
 }
 
+.header__bottom{
+    display:block !important;
+    background-color: $grey !important;
+    height: auto !important;
+}
+
 html{
     min-width: 356px !important;
     -webkit-text-size-adjust: none !important;
     line-height: 1.4;
+    font-size: 16px !important;
 
     @include breakpoint-down(small){
-        font-size: $font-small;
+        width: 100%;
+        height: auto;
+        background: $grey !important;
     }
+}
+
+body{
+    font-family:$Lato !important;
 }
 
 
@@ -84,9 +97,9 @@ h2{
 
         @media screen and (max-width: 1082px){
             margin-left: 0;
-            min-height: 1355px;
+            min-height: 1560px;
             margin-top: $container-margin * 2;
-            height: 1355px;
+            height: 1560px;
             justify-content: flex-start;
         }
 

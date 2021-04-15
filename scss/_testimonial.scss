@@ -21,9 +21,6 @@
         height: auto;
         justify-self: center;
 
-
-
-    
         .small{
             width: 335px;
             margin: 0 auto;
@@ -47,11 +44,11 @@
             .blurb{
                 font-weight: 500 !important;
                 line-height: 1.4 !important;
-                font-size: .875rem !important;
+                font-size: $font-large !important;
             }
 
             .title{
-                font-size: .875rem !important;
+                font-size: $font-large!important;
                 font-weight:bolder !important;
 
                 span{
