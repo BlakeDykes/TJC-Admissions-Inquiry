@@ -3,16 +3,29 @@
           box-sizing: border-box;
 }
 
+.header__bottom {
+  display: block !important;
+  background-color: #f2f2f2 !important;
+  height: auto !important;
+}
+
 html {
   min-width: 356px !important;
   -webkit-text-size-adjust: none !important;
   line-height: 1.4;
+  font-size: 16px !important;
 }
 
 @media (max-width: 61.375em) {
   html {
-    font-size: 0.95625em;
+    width: 100%;
+    height: auto;
+    background: #f2f2f2 !important;
   }
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
 }
 
 h1 {
@@ -122,9 +135,9 @@ h2 {
 @media screen and (max-width: 1082px) {
   .col__right {
     margin-left: 0;
-    min-height: 1355px;
+    min-height: 1560px;
     margin-top: 96px;
-    height: 1355px;
+    height: 1560px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -202,7 +215,7 @@ h2 {
   }
 }
 
-@media (max-width: 31.6875em) {
+@media screen and (max-width: 551px) {
   .adm__header {
     height: 300px;
   }
@@ -211,6 +224,12 @@ h2 {
 @media screen and (max-width: 420px) {
   .adm__header {
     height: 365px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .adm__header {
+    height: 400px;
   }
 }
 
@@ -233,7 +252,7 @@ h2 {
 .adm__header .header__text {
   margin: 0;
   font-weight: 400;
-  font-size: 1.125em !important;
+  font-size: 18px !important;
   line-height: 1.4;
 }
 
@@ -349,11 +368,11 @@ h2 {
 .testimonials .testimonial blockquote .blurb {
   font-weight: 500 !important;
   line-height: 1.4 !important;
-  font-size: .875rem !important;
+  font-size: 18px !important;
 }
 
 .testimonials .testimonial blockquote .title {
-  font-size: .875rem !important;
+  font-size: 18px !important;
   font-weight: bolder !important;
 }
 

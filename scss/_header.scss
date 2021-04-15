@@ -14,12 +14,16 @@
         height: 265px;
     }
 
-    @include breakpoint-down(xsmall){
+    @media screen and (max-width: 551px){
         height: 300px;
     }
 
     @media screen and (max-width: 420px){
         height: 365px;
+    }
+
+    @media screen and (max-width: 385px){
+        height: 400px;
     }
 
     .top{
