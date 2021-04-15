@@ -1,43 +1,49 @@
 .adm__header{
-    display: flex;
+    position: relative;
+    display: block;
     justify-content: center;
-    flex-direction: column;
-    margin-bottom: $container-margin;
+    margin-top: $container-margin;
+    height: 175px;
+
+    @include breakpoint-down(small){
+        height: 200px;
+    }
+
+    @media screen and (max-width: 746px){
+        height: 265px;
+    }
+
+    @include breakpoint-down(xsmall){
+        height: 300px;
+    }
+
+    @media screen and (max-width: 420px){
+        height: 365px;
+    }
 
     .top{
-        //background-image:url("https://www.tjc.edu/images/gold_bar.png");
+        background-image:url("https://www.tjc.edu/images/gold_bar.png");
         background-repeat: no-repeat;
         background-position: center bottom;
-        margin-top: $container-margin;
-        //padding-bottom: 10px;
+        padding-bottom: 10px;
         margin-bottom: $container-margin;
-        font-size:2.75em;
+        font-size:$font-xlarge;
         font-weight: bold;
-        height: 59px;
 
         @include breakpoint-down(large){
-            font-size: 2.5em;
+            font-size: 2.1em;
         }
 
-        @include breakpoint-down(large){
-            font-size: 1.93em;
+        @include breakpoint-down(medium){
+            
         }
     }
 
     .header__text{
-        position: relative;
         margin: 0;
-        font-size: 1.56em;
-        font-weight: 500;
-        height: 136px;
-    
-        @include breakpoint-down(large){
-            font-size: 1.45em;
-        }
-    
-        @include breakpoint-down(xsmall){
-            font-size: 1em;
-        }
+        font-weight: 400;
+        font-size: $font-large !important;
+        line-height: 1.4;
     }
 
 }

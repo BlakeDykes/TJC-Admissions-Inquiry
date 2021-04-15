@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-content: center;
+    padding-top: 43px;
 
     @include breakpoint-down(small){
         margin-bottom: $container-margin;
@@ -21,11 +22,10 @@
         }
 
         @include breakpoint-down(medium){
-            height: 150px;
-            max-width: 550px;
+            max-width: 750px;
         }
 
-        @include breakpoint-down(small){
+        @include breakpoint-down(xsmall){
             height: 125px;
         }
         
@@ -36,13 +36,32 @@
             justify-content: center;
             min-width: 200px;
 
-            @include breakpoint-down(medium){
-                min-width: 150px;
+            @include breakpoint-down(xsmall){
+                min-width: 125px
+            }
+            
+            span{
+                height: auto;
+                align-self: center;
+            }
+            
+            .campus{
+                background-image:url("/img/campus-acreage.svg") !important;
+                background-repeat: no-repeat;
+                background-position: center center
+            }
+            .cap{
+                background-image:url("/img/cap.svg") !important;
+                background-repeat: no-repeat;
+                background-position: center center
+            }
+            .graph{
+                background-image:url("/img/graph.svg") !important;
+                background-repeat: no-repeat;
+                background-position: center center
             }
 
-            @include breakpoint-down(small){
-                min-width: 125px;
-            }
+
         }
         
         &_text{
@@ -57,39 +76,15 @@
 
             p{
                 margin: 0;
-            }
-
-            @include breakpoint-down(large){
-                padding: 20px;
-            }
-
-            @include breakpoint-down(medium){
-                font-size: 1.1em;
-                padding: 10px;
+                position: absolute;
+                top: 50%;
+                @include transform(translate(0, -50%));
+                padding-right: 10px;
             }
 
             @include breakpoint-down(xsmall){
-                padding: 5px;
                 font-size: .875em;
             }
-
-            
-            &.grad{
-                padding-top:74px;
-
-                @include breakpoint-down(large){
-                    padding: 20px;
-                }
-
-                @include breakpoint-down(medium){
-                    padding-top: 10px;
-                }
-
-                @include breakpoint-down(xsmall){
-                    padding: 10px;
-                }
-            }
-
 
             &::before{
                 content: "";
