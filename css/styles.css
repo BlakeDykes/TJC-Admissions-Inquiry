@@ -4,22 +4,25 @@
 }
 
 html {
-  min-width: 340px !important;
+  min-width: 356px !important;
   -webkit-text-size-adjust: none !important;
-}
-
-body {
-  margin: 0 50px 0 50px;
+  line-height: 1.4;
 }
 
 @media (max-width: 61.375em) {
-  body {
-    margin: 0 25px 0 25px;
+  html {
+    font-size: 0.95625em;
   }
 }
 
 h1 {
-  font-style: italic;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  font-size: 2.2222222222rem;
+}
+
+h2 {
   text-align: center;
 }
 
@@ -29,6 +32,14 @@ h1 {
   width: 100%;
   max-width: 1400px;
   min-height: 2405px;
+  margin-bottom: 48px;
+  padding: 0 50px 0 50px;
+}
+
+@media (max-width: 61.375em) {
+  .con {
+    padding: 0 34px 0 34px;
+  }
 }
 
 .col {
@@ -41,9 +52,10 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 120px;
 }
 
-@media (max-width: 61.375em) {
+@media screen and (max-width: 1082px) {
   .col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -64,13 +76,19 @@ h1 {
           flex-direction: column;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  min-width: 475px;
+  min-width: 536px;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media (max-width: 70.25em) {
+  .col__left {
+    min-width: auto;
+  }
 }
 
 @media (max-width: 61.375em) {
@@ -99,80 +117,101 @@ h1 {
   min-height: 1355px;
 }
 
-@media (max-width: 61.375em) {
+@media screen and (max-width: 1082px) {
   .col__right {
     margin-left: 0;
     min-height: auto;
-    margin-top: 48px;
+    margin-top: 96px;
   }
+}
+
+.border_bottom {
+  border-bottom: 2px solid #d2d2d1;
+  width: 100%;
+  height: 2px;
+}
+
+.body_header {
+  width: 100%;
+  background-image: url("https://www.tjc.edu/images/gold_bar.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 10px;
+}
+
+.body_header .body {
+  margin: 0;
+  overflow-wrap: break-word;
 }
 
 .adm__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 48px;
-}
-
-.adm__header .top {
-  background-repeat: no-repeat;
-  background-position: center bottom;
   margin-top: 48px;
-  margin-bottom: 48px;
-  font-size: 2.75em;
-  font-weight: bold;
-  height: 59px;
+  height: 175px;
 }
 
-@media (max-width: 81.1875em) {
-  .adm__header .top {
-    font-size: 2.5em;
+@media (max-width: 61.375em) {
+  .adm__header {
+    height: 200px;
   }
 }
 
+@media screen and (max-width: 746px) {
+  .adm__header {
+    height: 265px;
+  }
+}
+
+@media (max-width: 31.6875em) {
+  .adm__header {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .adm__header {
+    height: 365px;
+  }
+}
+
+.adm__header .top {
+  background-image: url("https://www.tjc.edu/images/gold_bar.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 10px;
+  margin-bottom: 48px;
+  font-size: 2.22222rem;
+  font-weight: bold;
+}
+
 @media (max-width: 81.1875em) {
   .adm__header .top {
-    font-size: 1.93em;
+    font-size: 2.1em;
   }
 }
 
 .adm__header .header__text {
-  position: relative;
   margin: 0;
-  font-size: 1.56em;
-  font-weight: 500;
-  height: 136px;
-}
-
-@media (max-width: 81.1875em) {
-  .adm__header .header__text {
-    font-size: 1.45em;
-  }
-}
-
-@media (max-width: 31.6875em) {
-  .adm__header .header__text {
-    font-size: 1em;
-  }
+  font-weight: 400;
+  font-size: 1.125em !important;
+  line-height: 1.4;
 }
 
 .jotform {
+  padding-top: 96px;
   min-width: 100%;
   height: 100%;
   border: none;
-  min-height: 1597.5px;
+  min-height: 1715.5px;
 }
 
 @media (max-width: 31.6875em) {
   .jotform {
-    min-height: 1597.5px;
+    min-height: 1803.5px;
     min-width: 325px;
     width: 325px;
     -ms-grid-column-align: center;
@@ -183,10 +222,35 @@ h1 {
   }
 }
 
-.frame {
-  height: 445px;
+.aspect {
+  position: relative;
+  height: 0;
   width: 100%;
   margin-bottom: 48px;
+  padding-top: calc(50% + 35px);
+}
+
+@media screen and (max-width: 1082px) {
+  .aspect {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 31.6875em) {
+  .aspect {
+    width: 100%;
+  }
+}
+
+.aspect .frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 35px;
 }
 
 .testimonials {
@@ -196,6 +260,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
   margin-bottom: 48px;
 }
 
@@ -219,11 +284,11 @@ h1 {
 .testimonials .testimonial .small {
   width: 335px;
   margin: auto;
-  margin-bottom: 48px;
 }
 
 .testimonials .testimonial blockquote {
   margin: 0;
+  border: none;
 }
 
 .testimonials .testimonial blockquote::before {
@@ -232,26 +297,88 @@ h1 {
   background-size: cover;
   content: '';
   display: block;
-  height: 2.75rem;
+  height: 3.5rem;
   margin: 0 auto 1.3333333333rem;
-  width: 2.75rem;
+  width: 3.5rem;
 }
 
 .testimonials .testimonial blockquote .blurb {
-  font-weight: 500;
-  line-height: 1.4;
-  font-size: 1.222222rem;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  font-size: .875rem !important;
 }
 
 .testimonials .testimonial blockquote .title {
-  font-size: 1.4rem;
-  font-weight: bolder;
+  font-size: .875rem !important;
+  font-weight: bolder !important;
 }
 
 .testimonials .testimonial blockquote .title span {
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 300;
+  font-size: .875rem !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+
+.carousel-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+}
+
+@media (max-width: 61.375em) {
+  .carousel-inner {
+    height: 735px;
+  }
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade {
+  z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .stats {
@@ -265,6 +392,7 @@ h1 {
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-top: 43px;
 }
 
 @media (max-width: 61.375em) {
@@ -294,12 +422,11 @@ h1 {
 
 @media (max-width: 70.25em) {
   .stats .stat {
-    height: 150px;
-    max-width: 550px;
+    max-width: 750px;
   }
 }
 
-@media (max-width: 61.375em) {
+@media (max-width: 31.6875em) {
   .stats .stat {
     height: 125px;
   }
@@ -317,16 +444,35 @@ h1 {
   min-width: 200px;
 }
 
-@media (max-width: 70.25em) {
-  .stats .stat_icon {
-    min-width: 150px;
-  }
-}
-
-@media (max-width: 61.375em) {
+@media (max-width: 31.6875em) {
   .stats .stat_icon {
     min-width: 125px;
   }
+}
+
+.stats .stat_icon span {
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.stats .stat_icon .campus {
+  background-image: url("/img/campus-acreage.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.stats .stat_icon .cap {
+  background-image: url("/img/cap.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.stats .stat_icon .graph {
+  background-image: url("/img/graph.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .stats .stat_text {
@@ -342,47 +488,16 @@ h1 {
 
 .stats .stat_text p {
   margin: 0;
-}
-
-@media (max-width: 81.1875em) {
-  .stats .stat_text {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 70.25em) {
-  .stats .stat_text {
-    font-size: 1.1em;
-    padding: 10px;
-  }
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-right: 10px;
 }
 
 @media (max-width: 31.6875em) {
   .stats .stat_text {
-    padding: 5px;
     font-size: .875em;
-  }
-}
-
-.stats .stat_text.grad {
-  padding-top: 74px;
-}
-
-@media (max-width: 81.1875em) {
-  .stats .stat_text.grad {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 70.25em) {
-  .stats .stat_text.grad {
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 31.6875em) {
-  .stats .stat_text.grad {
-    padding: 10px;
   }
 }
 

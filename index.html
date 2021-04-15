@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>TJC Admissions Inquiry</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.tjc.edu/site/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="TJC Admissions Inquiry" content="Get in touch with our admissions department.">
     <meta property="og:title" content="TJC Admissions Inquiry">
@@ -8,61 +10,685 @@
     <meta property="og:image" content="https://photos.smugmug.com/photos/i-cjHDXgR/0/S/i-cjHDXgR-S.jpg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content:"TJC.edu">
-    <link rel="stylesheet" href="//www.tjc.edu/site/dist/css/orbit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://www.tjc.edu/site/dist/icons/icons.data.svg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//www.tjc.edu/site/dist/css/orbit.css">
+    <link rel="stylesheet" href="//www.tjc.edu/site/dist/icons/icons.data.svg.css" media="all">
+    <!--[if lt IE 9]>
+        <link href="//www.tjc.edu/site/dist/css/orbit-oldie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
 </head>
 <body>
+    <header class="header" id="top">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__cta">
+    <ul class="list list--inline"><li class="list__item"><a href="/register" class="list__link button header__cta-button button--primary">
+                            <span class="button__text">
+                              Register for Classes                        </span>
+                        </a></li><li class="list__item list__item--note"><div class="nav__note">Tyler Junior College | Tyler, TX</div></li></ul>            </div>
+                <div class="menu">
+                    <a data-toggle="menu" class="button button--menu" href="#site-menu">
+                        <span class="button__text">Menu</span>
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+                <div class="login">
+                    <a class="button button--login" href="https://myapacheaccess.tjc.edu/" id="js-button-login" data-a11y-toggle="siteLogin">
+                        <span class="button__text">Login</span>
+                        <i class="icon icon-login"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a class="logo__link" href="https://www.tjc.edu">
+                        <img class="logo__img" src="//www.tjc.edu/site/images/tyler-logo--color.svg" alt="Tyler Junior College">
+                    </a>
+                </div>
+                <form id="siteSearch" action="https://www.tjc.edu/site/scripts/google_results.php" method="get" class="form form--search form--append header__search">
+                    <p class="form__heading">How can we help you?</p>
+                    <div class="form__control form__control--append">
+                        <label for="search-site" class="visually-hidden">Search This Site</label>
+                        <input id="search-site" class="form__field" type="search" placeholder="Search…" name="q">
+                        <button id="searchSubmit" class="button button--primary form__submit" type="submit">
+                            <span class="button__text visually-hidden">Go</span>
+                            <i class="icon icon-search" style="background-image: none;"><svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="M13.173 13.643l5.828 5.827a.332.332 0 1 0 .47-.47l-5.828-5.827a.332.332 0 0 0-.47.47z"></path><path d="M14.507 9.954a4.553 4.553 0 1 1-9.105 0 4.553 4.553 0 0 1 9.105 0zm.664 0a5.217 5.217 0 1 0-10.434 0 5.217 5.217 0 0 0 10.434 0z"></path></svg></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+    <ul class="list list--main-nav left-nav"><li class="list__item list__item--main-nav"><a href="/admissions" class="list__link js-link-level-1" id="admission-nav-item" data-category="admission" aria-label="Press the down arrow to view the sub navigation for Admission." aria-expanded="true">Admission                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="false">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/admissions">
+                                                            Admission                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        TJC is a smart first choice for any student, whether you plan to transfer to a four-year university or gain the skills and training needed to go directly into the workforce.                                                </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="/applyonline">
+                                                        <span class="button__text">Apply Now</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="admission">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="admission" data-subcategory="admission-subcategory-1">
+                                                        Start Here                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/firsttime">Steps to Apply</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/costcalc">Cost Calculator</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/orientation">New Student Orientation</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/tsi">TSI Testing</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/register">Register for Classes</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/housing">Housing</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/careerplanning">Career Planning</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="admission">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="admission" data-subcategory="admission-subcategory-2">
+                                                        Next Steps                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/onward">Onward College Action Guide</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/degrees">Degrees &amp; Certificates</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/dualcredit">Dual Credit</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/finaid">Financial Aid</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/scholarships">Scholarships</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/veterans">Veterans Affairs</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="admission-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/change-of-address">Change of address</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="admission-nav-item">Loop to first item in Admission</button>
+    
+                                        </div></li><li class="list__item list__item--main-nav"><a href="/academics" class="list__link js-link-level-1" id="academics-nav-item" data-category="academics" aria-label="Press the down arrow to view the sub navigation for Academics." aria-expanded="true">Academics                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="false">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/academics">
+                                                            Academics                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        TJC has an outstanding record of academic quality, offering a bachelor's degree, associate's degree programs, certificates and training and technical programs.                                                </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="/degrees">
+                                                        <span class="button__text">Degrees &amp; Certificates</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="academics">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="academics" data-subcategory="academics-subcategory-1">
+                                                        Majors and Programs                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/onlinedegrees">Online Degrees</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/calendar">Academic Calendar</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/core">Core Curriculum</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20006/academics/240/about_associates_degrees">About Associate's Degrees</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20006/academics/241/about_certificates">About Certificates</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/continuingstudies">Continuing Studies</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/register">Register for Classes</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="academics">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="academics" data-subcategory="academics-subcategory-2">
+                                                        Student Support                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/advising">Advising</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/testing">Testing</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/tutoring">Tutoring</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/library">Library</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/counseling">Counseling</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/transfer">Transferring from TJC</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.bkstr.com/tylerjuniorstore/home">Book Store</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="academics-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/graduation">Graduation</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="academics-nav-item">Loop to first item in Academics</button>
+    
+                                        </div></li><li class="list__item list__item--main-nav"><a href="/aboutTJC" class="list__link js-link-level-1" id="abouttjc-nav-item" data-category="abouttjc" aria-label="Press the down arrow to view the sub navigation for About TJC." aria-expanded="true">About TJC                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="false">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/aboutTJC">
+                                                            About TJC                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        TJC is one of the largest community colleges in Texas, with 306 full-time faculty members and 248 part-time faculty members, and nearly 13,000 students enrolled.                                                </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="/aboutTJC">
+                                                        <span class="button__text">Learn More About TJC</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="abouttjc">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="abouttjc" data-subcategory="abouttjc-subcategory-1">
+                                                        Facts and History                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/news">News</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/locations">Campus Locations</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20019/tuition_and_cost/11/tjc_district">Tax District</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/history">History and Heritage</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="http://tjc90years.com/famous-alumni.html">Famous &amp; Notable Alumni</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/news/article/190/tjc_named_one_of_top_150_community_colleges_in_the_nation">Aspen Prize</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/library/archive">Library Archives</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/meetings/committee/1/board_of_trustees">Board Agendas</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/alumni">Alumni Association</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="abouttjc">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="abouttjc" data-subcategory="abouttjc-subcategory-2">
+                                                        Faculty, Staff &amp; Leadership                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/boardoftrustees">Board of Trustees</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20007/about_tjc/73/about_the_president">The President</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20007/about_tjc/75/executive_cabinet">Executive Cabinet</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/facultysenate">Faculty Senate</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/homepage/251/2020-2026_strategic_plan">Strategic Plan</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/directory/4/a_to_z">Employee Directory</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://tjc.csod.com/ats/careersite/search.aspx?site=1&amp;c=tjc">Jobs at TJC</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/hr">Human Resources</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="abouttjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/foundation">Foundation</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="abouttjc-nav-item">Loop to first item in About TJC</button>
+    
+                                        </div></li></ul><div class="logo logo--mobile">
+                            <a class="logo__link" href="https://www.tjc.edu">
+                                <img class="logo__img" src="//www.tjc.edu/site/images/tyler-logo--color.svg" alt="Tyler Junior College">
+                            </a>
+                        </div><ul class="list list--main-nav right-nav"><li class="list__item list__item--main-nav"><a href="/campuslife" class="list__link js-link-level-1" id="campuslife-nav-item" data-category="campuslife" aria-label="Press the down arrow to view the sub navigation for Campus Life." aria-expanded="true">Campus Life                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="false">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/campuslife">
+                                                            Campus Life                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        TJC provides a full college experience – we offer opportunities and programs that add to your involvement outside the classroom.                                                </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="/events">
+                                                        <span class="button__text">Events Calendar</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="campuslife">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="campuslife" data-subcategory="campuslife-subcategory-1">
+                                                        Life at TJC                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/housing">Residential Life &amp; Housing</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/intramural">Intramural Sports</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="http://www.apacheathletics.com">Athletics</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/spiritstraditions">Apache Spirits &amp; Traditions</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://tjc.campusdish.com/">Dining</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/alumni">Alumni Association</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20019/tuition_and_cost/58/student_employmentwork_study_jobs/1">Student Employment</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/supportservices">Support Services</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/clinic">Campus Clinic</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="campuslife">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="campuslife" data-subcategory="campuslife-subcategory-2">
+                                                        Student Organizations                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="http://TJC.edu/belles">Apache Belles</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/band">Apache Band</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/chiefs">Apache Chiefs</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/ptk">Phi Theta Kappa</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/honors">Presidential Honors Program</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/campuslife/studentsenate">Student Senate</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/ya-a-te">Ya-A-Te Leadership Retreat</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="campuslife-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="http://orgsync.tjc.edu">OrgSync</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="campuslife-nav-item">Loop to first item in Campus Life</button>
+    
+                                        </div></li><li class="list__item list__item--main-nav"><a href="/continuingstudies" class="list__link js-link-level-1" id="continuingstudies-nav-item" data-category="continuingstudies" aria-label="Press the down arrow to view the sub navigation for Continuing Studies." aria-expanded="false">Continuing Studies                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="true">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/ce">
+                                                            Continuing Studies                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        The School of Continuing Studies seeks to provide lifelong learning for people of all ages to develop personal and professional potential, upgrade job-related skills and prepare for informed participation in the civic, cultural and political life of the community.                                                </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="http://live-tjc-continuing-education.pantheonsite.io/courses">
+                                                        <span class="button__text">Search Courses</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="continuingstudies">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="continuingstudies" data-subcategory="continuingstudies-subcategory-1">
+                                                        Courses and Catalog                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/downloads/download/20/continuing_studies_catalog">Download Catalog</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/ohpe">OHPE Center</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/tjcwest">TJC West</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="continuingstudies">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="continuingstudies" data-subcategory="continuingstudies-subcategory-2">
+                                                        Professional Training                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://tjc.edu2.com/">Online Classes</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/lawenforcement">Law Enforcement Academy</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/fireacademy">Fire Academy</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/academyofdance">Academy of Dance</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="continuingstudies-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20188/continuing_studies/281/truck_driving">Truck Driving</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="continuingstudies-nav-item">Loop to first item in Continuing Studies</button>
+    
+                                        </div></li><li class="list__item list__item--main-nav"><a href="/visit" class="list__link js-link-level-1" id="visittjc-nav-item" data-category="visittjc" aria-label="Press the down arrow to view the sub navigation for Visit TJC." aria-expanded="true">Visit TJC                                    </a>
+                                        <span class="tooltip">
+                                            Press the down key to view the sub navigation
+                                        </span><div class="subnav" aria-hidden="false">
+    
+                                            <div class="subnav__cell subnav__cell--left">
+                                                                                                <h2 class="subnav__heading">
+                                                                                                        <a class="subnav__heading-link js-link-level-2" href="/visit">
+                                                            Visit TJC                                                    </a>
+                                                                                                    </h2>
+                                                
+                                                
+                                                    <p class="subnav__content">
+                                                        60-year-old oak trees and historic buildings are part of daily life here on TJC’s big, beautiful campus.
+                                                    </p>
+                                                
+                                                                                                <a class="subnav__button button button--chevron button--primary" href="https://youtu.be/3NbvHju3J6w">
+                                                        <span class="button__text">Virtual Campus Tour</span>
+                                                        <i class="icon icon-chevron-right"></i>
+                                                    </a>
+                                                
+                                            </div>
+    
+                                            <div class="subnav__cell subnav__cell--middle" data-subnav-middle="visittjc">
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="visittjc" data-subcategory="visittjc-subcategory-1">
+                                                        Tours and Visits                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/visit/dailytours">Daily Tours</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/visit/grouptours">Large Group Tours</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/previewday">Preview Day</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://cdn-map1.nucloud.com/nucloudmap/index.html?map=163">Interactive Map</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/downloads/maps">Downloadable Map</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-1">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/locations">Campus Locations</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+    
+                                            <div class="subnav__cell subnav__cell--right" data-subnav-right="visittjc">
+    
+                                                                                                <h2 class="subnav__heading js-subnav-heading" data-category="visittjc" data-subcategory="visittjc-subcategory-2">
+                                                        Tyler Area Resources                                                </h2>
+                                                
+                                                                                                <ul class="subnav__list list list--chevron js-subnav-list">
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/hotels">Hotel Accommodations</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/downloads/file/1051/tyler_transit_bus_map">Tyler Transit Bus Map</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="https://www.tjc.edu/info/20019/tuition_and_cost/11/tjc_district">TJC Tax District</a>
+                                                        </li>
+                                                                                                            <li class="list__item" data-category="visittjc-subcategory-2">
+                                                            <span class="icon icon-chevron-boxed-right"></span><a class="list__link" href="/discounts">Student Discounts</a>
+                                                        </li>
+                                                                                                        </ul>
+                                                                                        </div>
+                                            <button class="visually-hidden js-loop-button" data-loop="visittjc-nav-item">Loop to first item in Visit TJC</button>
+    
+                                        </div></li></ul>        </div>
+        </div>
+        <div class="header__toggles">
+            <div class="header__toggle menu">
+                <a data-toggle="menu" class="button button--menu" href="#site-menu">
+                    <span class="button__text">Menu</span>
+                    <i class="icon icon-menu"></i>
+                </a>
+            </div>
+            <div class="header__toggle login">
+                <a class="button button--login" href="https://myapacheaccess.tjc.edu/">
+                    <span class="button__text">Login</span>
+                    <i class="icon icon-login"></i>
+                </a>
+            </div>
+            <div class="header__toggle search">
+                <a data-toggle="search" class="button button--search" href="#site-search">
+                    <span class="button__text">Search</span>
+                    <i class="icon icon-search"></i>
+                </a>
+            </div>
+        </div>
+        <div class="header__audience">
+    <ul id="audienceMenu" class="list"><li class="list__item"><a href="/parents" class="list__link">Parents &amp; Families</a></li><li class="list__item"><a href="/alumni" class="list__link">Alumni</a></li><li class="list__item"><a href="/facultystaff" class="list__link">Faculty &amp; staff</a></li><li class="list__item"><a href="/community" class="list__link">Community</a></li><li class="list__item"><a href="http://www.apacheathletics.com" class="list__link">Athletics</a></li></ul>    </div>
+    </header>
     <div class="con">
         <div class="adm__header">
             <h1 class="widget__heading top">
-                Educating Everyone -- the Path to a Better World
+                Educating Everyone - the Path to a Better World
             </h1>
             <p class="header__text">
                 With more than 115+ degree and certificate programs, plus extensive training and technical programs, TJC is the best step for any student, whether they plan to transfer to a four-year institution or gain the skills they need to go directly into the workforce... all at 1/3 the cost of a public four-year university!  
             </p>    
         </div>
+        <div class="border_bottom"></div>
         <div class="col">
             <div class="col__left">
-                <iframe class="frame" 
-                id="Claire Mizell - Director of Admissions"
-                src="https://www.youtube.com/embed/ug9WwT_5VV8"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-                <iframe
-                id="JotFormIFrame-201676232264048"
-                class="jotform"
-                title="TJC Admissions Inquiry"
-                allowtransparency="true"
-                allowfullscreen="true"
-                allow="geolocation; microphone; camera"
-                src="https://form.jotform.com/TJCApaches/tjc-admissions-inquiry"
-                frameborder="0"
-                scrolling="no"
-                >
+                <div class="body_header">
+                    <h2 class="widget__heading body">
+                        Hear from our Director of Admissions
+                    </h1>   
+                </div>
+                <div class="aspect"> 
+                    <iframe class="frame" width="100%" height="100%" src="https://www.youtube.com/embed/ug9WwT_5VV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    <div class="border_bottom"></div>
+                    <iframe class="jotform"
+                    id="JotFormIFrame-201676232264048"
+                    title="TJC Admissions Inquiry"
+                    onload="window.parent.scrollTo(0,0)"
+                    allowtransparency="true"
+                    allowfullscreen="true"
+                    allow="geolocation; microphone; camera"
+                    src="https://form.jotform.com/TJCApaches/tjc-admissions-inquiry"
+                    frameborder="0"
+                    style="
+                    width: 100%;
+                    border:none;"
+                    scrolling="no"
+                    >
                 </iframe>
             </div>
             <div class="col__right">
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <img src="//www.tjc.edu/images/harman_kurt_quote.jpg" alt="" class="widget__image small">
-                        <blockquote>
-                            <p class="blurb">
-                                "TJC sciences prepared me for dental school. The subjects for the Dental Aptitude Test were directly from the courses I took at TJC."
-                            </p>
-                            <div>
-                                <p class="title">
-                                    Kurt Harman, D.D.S <br>
-                                    <span>Hill County Dental and Clark Dental Group <br> TJC 2008-2010</span>
+                <div class="body_header">
+                    <h2 class="widget__heading body">
+                        What our Students Say
+                    </h2>   
+                </div>
+                <div class="testimonials carousel slide carousel-fade" id="testCarousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="testimonial item active" id="t_1">
+                            <img src="//www.tjc.edu/images/ramsey_quote.jpg" alt="Bryan Ramsey Quote" class="widget__image small">
+                            <blockquote>
+                                <p class="blurb">
+                                    "TJC prepared me well for the rigors of Texas A&M's veterinary program. My instructors were excellent and invested in my success. We are fortunate to have such a quality institution in East Texas."
                                 </p>
-                            </div>
-                        </blockquote>
+                                <div>
+                                    <p class="title">
+                                        Bryan Ramsey, DVM<br>
+                                        <span>South Tyler Animal Clinic</span>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial item" id="t_2">
+                            <img src="//www.tjc.edu/images/andrea_quote_bubble.jpg" alt="Andrea Masenda Quote" class="widget__image small">
+                            <blockquote>
+                                <p class="blurb">
+                                    "Being a part of TJC's Journalism department was my first experience in journalism ever - my foundation was really built there. My involvement with The Apache Pow Wow (now The DrumBeat) was a resume builder that I used to get accepted into internship programs and ultimately into the journalism school at TCU."
+                                </p>
+                                <div>
+                                    <p class="title">
+                                        Andrea Masenda<br>
+                                        <span>Assistant Editor, ESPN Digital - Social/Viral Content</span>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial item" id="t_3">
+                            <img src="//www.tjc.edu/images/harman_kurt_quote.jpg" alt="Kurt Harman Quote" class="widget__image small">
+                            <blockquote>
+                                <p class="blurb">
+                                    "TJC sciences prepared me for dental school. The subjects for the Dental Aptitude Test were directly from the courses I took at TJC."
+                                </p>
+                                <div>
+                                    <p class="title">
+                                        Kurt Harman, D.D.S<br>
+                                        <span>Hill County Dental and Clark Dental Group<br>TJC 2008-2010</span>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial item" id="t_4">
+                            <img src="//www.tjc.edu/images/jessica_peters_bubble.jpg" alt="" class="widget__image small">
+                            <blockquote>
+                                <p class="blurb">
+                                    "Being a part of the TJC forensics team was one the greatest experiences of my life. Beyond the benefits of developing my speaking skills, I was taught invaluable lessons of confidence, composure and resilience, which directly contribute to my professional and personal achievements even today."
+                                </p>
+                                <div>
+                                    <p class="title">
+                                        Jessica Peters<br>
+                                        <span>Account Executive, Edelman PR firm<br>London, England</span>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
                     </div>
+                </div>
+                <div class="border_bottom_testimonial"></div>
+                <div class="body_header">
+                    <h2 class="widget__heading body">
+                        Why Choose TJC
+                    </h2>   
                 </div>
                 <div class="stats">
                     <div class="stat">
                         <div class="stat_icon">
-                            <span class="icon icon-nav-with-icon__1-3 svg"></span>
+                            <span class="icon graph svg"></span>
                         </div>
                         <div class="stat_text">
                             <p>
@@ -72,7 +698,7 @@
                     </div>
                     <div class="stat">
                         <div class="stat_icon">
-                            <span class="icon icon-nav-with-icon__cap svg"></span>
+                            <span class="icon cap svg"></span>
                         </div>
                         <div class="stat_text grad">
                             <p>
@@ -82,7 +708,7 @@
                     </div>
                     <div class="stat">
                         <div class="stat_icon">
-                            <span class="icon icon-nav-with-icon__campus svg"></span>
+                            <span class="icon campus svg"></span>
                         </div>
                         <div class="stat_text">
                             <p>
@@ -94,6 +720,136 @@
             </div>
         </div>
     </div>
+    <!-- googleoff: index -->
+<footer class="site-footer">
+    <div class="site-footer__top">
+        <div class="container">
+            <div class="site-footer__left">
+                <div class="site-footer__identity">
+                    <a href="https://www.tjc.edu" class="identity__link logo">
+                        <img class="identity__image" src="//www.tjc.edu/site/images/tyler-logo--mono.svg" alt="Tyler Junior College">
+                        <span class="identity__heading visually-hidden">Tyler Junior College</span>
+                    </a>
+                </div>
+                <div class="site-footer__contact">
+                    <i class="icon icon-phone"></i>
+                    <a class="contact__link" href="tel:8006875680">(800) 687-5680</a>
+                </div>
+                <div class="social-icons">
+                    <p class="social-icons__label">Connect with us</p>
+                    <ul class="list social-icons__list">
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" href="http://facebook.com/TylerJuniorCollege ">
+                                <span class="visually-hidden">Facebook</span>
+                                <span class="icon icon-facebook"></span>
+                            </a>
+                        </li><!--
+                        --><li class="social-icons__item">
+                            <a class="social-icons__link" href="https://www.linkedin.com/edu/school?id=21280">
+                                <span class="visually-hidden">Linked In</span>
+                                <span class="icon icon-linkedin"></span>
+                            </a>
+                        </li><!--
+                        --><li class="social-icons__item">
+                            <a class="social-icons__link" href="http://twitter.com/tylerjrcollege ">
+                                <span class="visually-hidden">Twitter</span>
+                                <span class="icon icon-twitter"></span>
+                            </a>
+                        </li><!--
+                        --><li class="social-icons__item">
+                            <a class="social-icons__link" href="http://youtube.com/tjcapaches ">
+                                <span class="visually-hidden">You tube</span>
+                                <span class="icon icon-youtube"></span>
+                            </a>
+                        </li><!--
+                        --><li class="social-icons__item">
+                            <a class="social-icons__link" href="http://instagram.com/tjcapaches ">
+                                <span class="visually-hidden">Instagram</span>
+                                <span class="icon icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer__right">
+                <ul class="nav nav--block site-footer__primary-nav"><li class="nav__item">
+            <a href="/news" class="nav__link">News</a>
+        </li><li class="nav__item">
+            <a href="/events" class="nav__link">Events</a>
+        </li><li class="nav__item">
+            <a href="/contactus" class="nav__link">Contact us</a>
+        </li><li class="nav__item">
+            <a href="/locations" class="nav__link">Campus locations</a>
+        </li><li class="nav__item">
+            <a href="https://cdn-map1.nucloud.com/nucloudmap/index.html?map=163&amp;layer=Academics,Administrative,Athletic%20Facilities,Attractions,Dining,Landmarks,Residence%20Halls" class="nav__link">Campus map</a>
+        </li><li class="nav__item">
+            <a href="/calendar" class="nav__link">Academic calendar</a>
+        </li><li class="nav__item">
+            <a href="/directory/4/a_to_z" class="nav__link">Employee directory</a>
+        </li><li class="nav__item">
+            <a href="/giving" class="nav__link">Give to TJC</a>
+        </li><li class="nav__item">
+            <a href="/residencelife" class="nav__link">Housing</a>
+        </li><li class="nav__item">
+            <a href="/library" class="nav__link">Library </a>
+        </li><li class="nav__item">
+            <a href="/registrar" class="nav__link">Registrar</a>
+        </li><li class="nav__item">
+            <a href="/catalog" class="nav__link">Catalog</a>
+        </li><li class="nav__item">
+            <a href="/coursesearch" class="nav__link">Course search</a>
+        </li><li class="nav__item">
+            <a href="/syllabussearch" class="nav__link">Syllabus Search - HB 2504</a>
+        </li><li class="nav__item">
+            <a href="/onlinedegrees" class="nav__link">Online Degrees</a>
+        </li><li class="nav__item">
+            <a href="/change-of-address" class="nav__link">Student Change of Address</a>
+        </li><li class="nav__item">
+            <a href="https://tjc.csod.com/ats/careersite/search.aspx?site=1&amp;c=tjc" class="nav__link">Jobs at TJC</a>
+        </li><li class="nav__item">
+            <a href="https://www.tjc.edu/info/20048/counseling_services" class="nav__link">Counseling &amp; Mental Health</a>
+        </li><li class="nav__item">
+            <a href="/downloads/download/84/institutional_resume" class="nav__link">Institutional Resume</a>
+        </li><li class="nav__item">
+            <a href="http://www.bkstr.com/tylerjuniorstore/home" class="nav__link">Bookstore</a>
+        </li><li class="nav__item">
+            <a href="https://www.tjc.edu/info/20031/testing_services" class="nav__link">Testing Services</a>
+        </li></ul>                    </div>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <div class="container">
+            <ul class="nav site-footer__secondary-nav"><li class="nav__item">
+            <a href="/homepage/14/consumer_information" class="nav__link">Consumer Information</a>
+        </li><li class="nav__item">
+            <a href="/police" class="nav__link">Campus Police</a>
+        </li><li class="nav__item">
+            <a href="/rfp" class="nav__link">Bid Opportunities</a>
+        </li><li class="nav__item">
+            <a href="/terms" class="nav__link">Disclaimer</a>
+        </li><li class="nav__item">
+            <a href="/boardoftrustees" class="nav__link">Board of Trustees</a>
+        </li><li class="nav__item">
+            <a href="/info/20017/consumer_information/14/title_ix" class="nav__link">Title IX</a>
+        </li><li class="nav__item">
+            <a href="/sacs" class="nav__link">SACSCOC Accreditation</a>
+        </li><li class="nav__item">
+            <a href="/sexualassault" class="nav__link">Anonymous Sexual Assault Report</a>
+        </li><li class="nav__item">
+            <a href="http://pol.tasb.org/Home/Index/1076" class="nav__link">Board Policy Manual</a>
+        </li><li class="nav__item">
+            <a href="https://www.tjc.edu/info/20017/consumer_information/123/student_rights_responsibilities_and_information" class="nav__link">Student Rights and Responsibilities</a>
+        </li><li class="nav__item">
+            <a href="/site_map" class="nav__link">Sitemap </a>
+        </li></ul>                    <p class="site-footer__terms">Tyler Junior College gives equal consideration to all applicants for admission, employment and participation in its programs and activities without regard to race, color, religion, national origin, gender, gender identity, gender expression, sexual orientation, age, marital status, disability, veteran status or limited English proficiency (LEP). Tyler Junior College respects the legal rights of each person to work and learn in an environment that is free from unlawful sexual discrimination including sexual harassment and sexual violence.</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>history.scrollRestoration = "manual"</script>
 </body>
 </html>
+
+https://form.jotform.com/211036772393152
