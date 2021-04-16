@@ -3,7 +3,7 @@
     display: block;
     justify-content: center;
 
-    margin-top: $container-margin;
+    margin-top: 105px;
     height: 175px;
 
     @include breakpoint-down(small){
@@ -15,7 +15,7 @@
     }
 
     @media screen and (max-width: 551px){
-        height: 300px;
+        height: 315px;
     }
 
     @media screen and (max-width: 420px){
