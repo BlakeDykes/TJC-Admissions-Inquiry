@@ -538,19 +538,19 @@ h2 {
 }
 
 .stats .stat_icon .campus {
-  background-image: url("/img/campus-acreage.svg") !important;
+  background-image: url("https://tjcresources.net/tjc-admissions-inquiry/img/campus-acreage.svg") !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .stats .stat_icon .cap {
-  background-image: url("/img/cap.svg") !important;
+  background-image: url("https://tjcresources.net/tjc-admissions-inquiry/img/cap.svg") !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .stats .stat_icon .graph {
-  background-image: url("/img/graph.svg") !important;
+  background-image: url("https://tjcresources.net/tjc-admissions-inquiry/img/graph.svg") !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
